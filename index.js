@@ -420,7 +420,8 @@ io.on("connection", (socket) => {
 });
 
 
-
-server.listen(process.env.PORT || 4000, () => {
-  console.log('Server started on port 4000');
+const PORT = process.env.PORT || 4000;
+server.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server started on port ${PORT}`);
 });
+
