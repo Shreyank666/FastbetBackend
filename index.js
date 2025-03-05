@@ -385,8 +385,7 @@ const fetchOdds = async () => {
           matchName,  // ✅ Store match name
           matchOdds: response.data.result.team_data || [],  // ✅ Match Odds (Lagai/Khai)
           fancyMarkets: response.data.result.session || [],
-          commissionFancy: response.data.result.commission_fancy_data || [],
-          noCommissionFancy: response.data.result.no_commission_fancy_data || []
+          commissionFancy: response.data.result.commission_fancy_data || []
         };
       }
     }
